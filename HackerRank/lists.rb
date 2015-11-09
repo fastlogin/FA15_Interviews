@@ -19,6 +19,7 @@ def print_llist(head)
 	end
 end
 
+# reverse a linked list.
 def reverse(head)
 	temp = head.next
 	head.next = nil

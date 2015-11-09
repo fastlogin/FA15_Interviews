@@ -1,9 +1,10 @@
-# Given a bag of coins and a value return how many ways there are to make
-# that value with the coins in the bag.
+
+# Given a set of coin values return the number of ways to sum to a certain monetary amount.
 def num_ways_coins(coins,target)
 	sum_to_val_two(coins,target)
 end
 
+# Given an array of values return the number of ways to sum to a certain external value.
 def sum_to_val(vals,target)
 	puts(vals.to_s)
 	return 0 if target < 0
@@ -16,6 +17,8 @@ def sum_to_val(vals,target)
 	return ans
 end
 
+# Given a set of values, return the number of ways to sum to a certain external value
+# assuming you can use infinite copies of each value.
 def sum_to_val_two(vals,target)
 	return 0 if target < 0
 	return 1 if target == 0

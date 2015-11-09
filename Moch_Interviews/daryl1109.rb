@@ -1,3 +1,5 @@
+
+# Return the nth c-say sequence.
 def csay(n)
 	return [1] if n == 1
 	prev = csay(n-1)
@@ -15,6 +17,8 @@ def csay(n)
 	return curr
 end
 
+# Given a list of words of equal length return another list using the given list's 
+# character index distribution.
 def prob_word_dist(arr)
 	counts = {}
 	(0..arr[0].size-1).each do |i|

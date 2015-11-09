@@ -1,6 +1,7 @@
 require_relative '../HackerRank/trees'
 require 'set'
 
+# Given a sorted array convert it to a balanced binary search tree.ß
 def sorted_bst(arr)
 	return nil if arr.size == 0 
 	if arr.size == 1 then
@@ -19,6 +20,7 @@ def sorted_bst(arr)
 	return root
 end
 
+# Given a set return the corresponding powerset.
 def powerset(arr)
 	return Set.new [[]] if arr.size == 0
 	to_add = Set.new []
