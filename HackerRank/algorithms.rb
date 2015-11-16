@@ -1,6 +1,6 @@
 require 'set'
 
-#Return abs difference of two diags of square matrix.
+# Return abs difference of two diags of square matrix.
 def diag_abs(mat)
 	diag1 = 0
 	diag2 = 0
@@ -11,7 +11,7 @@ def diag_abs(mat)
 	(diag1-diag2).abs
 end
 
-#Return ratio of negative and positive numbers and zeroes in an array.
+# Return ratio of negative and positive numbers and zeroes in an array.
 def neg_pos_zero(arr)
 	zeros = 0;
 	negs = 0;
@@ -30,7 +30,7 @@ def neg_pos_zero(arr)
 	puts(Float(zeros)/len)
 end
 
-#Print staircase of height height
+# Print staircase of height height
 def staircase(height)
 	(1..height).each do |i|
     	(1..height-i).each do |j|
@@ -46,7 +46,7 @@ def staircase(height)
 	end
 end
 
-#You are given time in AM/PM format. Convert this into a 24-hour format. hh:mm:ssAM or hh:mm:ssPM -> hh:mm:ss
+# You are given time in AM/PM format. Convert this into a 24-hour format. hh:mm:ssAM or hh:mm:ssPM -> hh:mm:ss
 def time_convert(twelve)
 	if twelve[8..9] == "PM" then
     	if twelve[0..1] == "12" then 
@@ -64,7 +64,7 @@ def time_convert(twelve)
 	twentyfour
 end
 
-#Given two lists of numbers find all the missing numbers in a from b
+# Given two lists of numbers find all the missing numbers in a from b
 def missing_nums(a,b)
     ahash = {}
     bhash = {}
