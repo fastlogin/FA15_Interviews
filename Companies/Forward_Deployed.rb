@@ -57,7 +57,6 @@ end
 def bfs(mat,neighbors,visited)
 	ans = 1
 	while neighbors.size != 0 do
-		puts(ans)
 		temp = neighbors.pop
 		temp_neighbors = neighboring(mat,temp,visited)
 		ans += temp_neighbors.size

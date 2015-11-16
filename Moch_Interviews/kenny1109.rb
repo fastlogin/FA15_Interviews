@@ -17,7 +17,6 @@ end
 Struct.new("NodeDepth",:node, :depth)
 
 def bfs(neighbors,visited,depth_map)
-	neighbors = curr.neighbors
 	while neighbors.size != 0 do
 		temp = neighbors.pop
 		visited.add(temp.node) if !visited.include?(temp.node)

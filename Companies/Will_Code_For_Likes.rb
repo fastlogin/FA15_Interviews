@@ -35,10 +35,10 @@ end
 
 def robot_grid(grid,m,n,x,y)
 	return 1 if x == m && y == n
-	return 0 if x < m
+	return 0 if x > m
 	return 0 if y > n
 	return 0 if grid[x][y] == 1
-	path_1 = robot_grid(grid,m,n,x-1,y)
+	path_1 = robot_grid(grid,m,n,x+1,y)
 	path_2 = robot_grid(grid,m,n,x,y+1)
 	path_1 + path_2
 end
